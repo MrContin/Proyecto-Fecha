@@ -5,6 +5,9 @@
  */
 package fecha;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 /**
  *
  * @author 203p21
@@ -21,5 +24,10 @@ public class Fecha {
         this.anio = anio;
     }
     
-    
+    public Fecha(){
+    Calendar c=new GregorianCalendar();
+    dia=c.get(Calendar.DAY_OF_MONTH);
+    mes=c.get(Calendar.DAY_OF_WEEK);
+    anio=c.get(Calendar.DAY_OF_YEAR);
+    }
 }
